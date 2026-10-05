@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aslbek — Creative Developer</title>
+  <meta name="description" content="Aslbek — Creative Developer & UI Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <div class="preloader-mark">AN<span>.</span></div>
+    <div class="preloader-count" id="preloaderCount">0</div>
+    <div class="preloader-bar"><span id="preloaderFill"></span></div>
+  </div>
+
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
+  <div class="progress"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <header class="nav">
+    <a class="logo" href="#top">AN<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta magnetic" href="#contact">Let's talk ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow load-in">CREATIVE DEVELOPER · UI DESIGNER</p>
+        <h1 class="load-in">BUILDING<br><em>DIGITAL</em><br>EXPERIENCES.</h1>
+        <p class="hero-text load-in">I turn ideas into fast, expressive and memorable digital products — from first sketch to shipped pixel.</p>
+        <a class="pill magnetic load-in" href="#work">Explore my work <span>↓</span></a>
+        <div class="stats load-in">
+          <div class="stat"><span class="stat-num" data-count="24">0</span><span class="stat-label">Projects shipped</span></div>
+          <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">Happy clients</span></div>
+          <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Years in craft</span></div>
+        </div>
+      </div>
+      <div class="orb-wrap" aria-hidden="true">
+        <canvas id="orb-canvas"></canvas>
+      </div>
+      <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="marquee"><div>DESIGN · <em>CODE</em> · CREATE · <em>SHIP</em> · DESIGN · <em>CODE</em> · CREATE · <em>SHIP</em> · DESIGN · <em>CODE</em> · CREATE · <em>SHIP</em> · </div></section>
+
+    <section id="work" class="section work">
+      <div class="section-head reveal"><span>01 / SELECTED WORK</span><span>2025—2026</span></div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-visual" data-variant="0"><canvas class="project-canvas"></canvas><span>ASPIRO</span><small>EDTECH / PRODUCT</small></div>
+          <div class="project-meta"><h2>ASPIRO</h2><p>Education platform & digital experience</p><span>UI/UX · Frontend</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-visual" data-variant="1"><canvas class="project-canvas"></canvas><span>CHECKING</span><small>SAAS / SYSTEM</small></div>
+          <div class="project-meta"><h2>CHECKING</h2><p>Attendance and management system concept</p><span>Product · Frontend</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-visual" data-variant="2"><canvas class="project-canvas"></canvas><span>NIMBUS</span><small>DASHBOARD / SAAS</small></div>
+          <div class="project-meta"><h2>NIMBUS</h2><p>Real-time analytics dashboard for growing teams</p><span>Product · Data Viz</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-visual" data-variant="3"><canvas class="project-canvas"></canvas><span>AN / LAB</span><small>EXPERIMENTAL</small></div>
+          <div class="project-meta"><h2>AN LAB</h2><p>Experiments in motion, interaction and 3D</p><span>Creative Code · 3D</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="section-head reveal"><span>02 / APPROACH</span><span>HOW I WORK</span></div>
+      <div class="process-grid">
+        <div class="step reveal"><span class="step-num">01</span><h3>Discover</h3><p>Dig into the problem, the users and the constraints before touching a single pixel.</p></div>
+        <div class="step reveal"><span class="step-num">02</span><h3>Design</h3><p>Explore directions fast, then commit to one system — type, color, motion, layout.</p></div>
+        <div class="step reveal"><span class="step-num">03</span><h3>Develop</h3><p>Build it clean and fast, with the same care for the code as for the interface.</p></div>
+        <div class="step reveal"><span class="step-num">04</span><h3>Deliver</h3><p>Ship, measure, refine. A launch is a start, not a finish line.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head reveal"><span>03 / ABOUT</span></div>
+      <div class="about-grid">
+        <h2 class="reveal">I LIKE MAKING<br><em>THINGS FEEL</em><br>ALIVE.</h2>
+        <div class="about-copy reveal">
+          <p>I'm Aslbek — a developer and designer exploring the space between clean interfaces and expressive interaction.</p>
+          <p>I care about details, motion and products that feel intentional rather than generic.</p>
+          <ul class="timeline">
+            <li><span class="t-year">2025—Now</span><span class="t-role">Freelance Creative Developer</span></li>
+            <li><span class="t-year">2023—2025</span><span class="t-role">Frontend Engineer, product studio</span></li>
+            <li><span class="t-year">2021—2023</span><span class="t-role">UI Designer, early-stage startups</span></li>
+          </ul>
+          <div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span><span>Figma</span><span>GitHub</span><span>3D / Web</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-head reveal"><span>04 / WORDS</span><span id="tDots" class="t-dots"></span></div>
+      <div class="t-track reveal" id="tTrack">
+        <blockquote class="t-card is-active">
+          <p>“Aslbek turned a messy brief into the cleanest product experience we've shipped. Fast, sharp, and genuinely fun to work with.”</p>
+          <cite>— Dilnoza R., Product Lead @ Aspiro</cite>
+        </blockquote>
+        <blockquote class="t-card">
+          <p>“The kind of developer who also thinks like a designer. Every detail was considered, nothing felt default.”</p>
+          <cite>— Jasur T., Founder @ Checking</cite>
+        </blockquote>
+        <blockquote class="t-card">
+          <p>“Delivered a dashboard our data team actually enjoys using. Motion and clarity in equal measure.”</p>
+          <cite>— Malika S., CTO @ Nimbus</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <p class="eyebrow reveal">THE PRINCIPLE</p>
+      <h2 class="reveal">LESS NOISE.<br><em>MORE IMPACT.</em></h2>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head"><span>05 / CONTACT</span></div>
+      <div class="contact-box reveal">
+        <p class="eyebrow">HAVE AN IDEA?</p>
+        <h2>LET'S BUILD<br><em>SOMETHING.</em></h2>
+        <a class="pill light magnetic" href="mailto:aslbeknasriddinov70@gmail.com">Start a conversation ↗</a>
+        <div class="social-row">
+          <a href="mailto:aslbeknasriddinov70@gmail.com">Email</a>
+          <a href="https://github.com/Nsrv224" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 ASLBEK</span><span>DESIGN × CODE</span></footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
